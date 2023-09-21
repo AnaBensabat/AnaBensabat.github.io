@@ -1,0 +1,303 @@
+:root {
+  --primary-color: #5072A7 ;
+  --secundary-color: darkgrey;
+  --font-family: 'IBM-Plex-Serif', 'IBM-Plex-Sans', sans-serif;
+  --left-padding: 80px;
+  --right-padding: 80px;
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+a{
+    color: var(--primary-color);   
+}
+
+body {
+    line-height: 1.3em;
+    background-color:#f1f1ef;
+}
+
+html, body{
+    height:100%;
+    padding:0;
+}
+
+h1 {
+    color: #2E5894;
+    padding: 20px;
+    padding-top: 55px;
+    font-size: 50px;
+    font-family: "IBM-Plex-Serif";
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+}
+
+h2{
+    color: black;
+    align: center;
+    padding: 10px;
+    padding-left:15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: 500;
+    color: #555;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #555;
+    margin-bottom: 20px;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    padding-left:50px;
+    margin-bottom:5px;
+}
+
+
+h5{
+    color: darkgrey;
+    align: center;
+    padding-left:15px;
+    
+    font-size: 15px;
+    text-align: center;
+}
+
+.small-text-box {
+    width: 1000px;    
+    position: relative;
+    margin-top:50px;
+    margin-bottom:50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+text{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    text-align: align;
+    
+}
+
+small-text{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1;
+    color: #3B3C36;
+}
+
+empty{
+    margin:40px;
+}
+
+url{
+    color: #2E5894;
+    font-size: 15px;
+}
+
+ul {
+    top:0;
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 80px; /* Adjust the left padding to change indentation */
+}
+
+
+li::before {
+    content: "\2022"; /* Unicode bullet character (•) */
+    margin-right: 5px; /* Space between the bullet and the text */
+}
+
+.vertical-stripe{
+
+    width: 1300px;
+    height:100vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow:auto;
+    
+    background-color: white;
+    border-left: 1px solid #ccc; 
+    border-right: 1px solid #ccc; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.image-text-container {
+    
+    width: 1000px;
+    height:200px;
+    position: relative;
+    margin-top:50px;
+    margin-bottom:80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.header-text-content{
+    height: 180px;
+    background-color: white; 
+ /*  border: 2px solid var(--secundary-color);*/
+    border-bottom: 5px solid var(--secundary-color);
+    border-radius: 10px;
+ 
+}
+
+
+.text-box {
+    width: 1100px;    
+    position: relative;
+    margin-top:50px;
+    margin-bottom:50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+@font-face {
+  font-family: "IBM-Plex-Mono"; 
+  src: url('fonts/IBM-Plex-Mono/IBMPlexMono-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "IBM-Plex-Mono"; 
+  src: url('fonts/IBM-Plex-Mono/IBMPlexMono-Italic.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: "IBM-Plex-Mono"; 
+  src: url('fonts/IBM-Plex-Mono/IBMPlexMono-Bold.ttf') format('truetype'); 
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "IBM-Plex-Mono"; 
+  src: url('fonts/IBM-Plex-Mono/IBMPlexMono-BoldItalic.ttf') format('truetype'); 
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBM-Plex-Sans"; 
+  src: url('fonts/IBM-Plex-Sans/IBMPlexSans-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "IBM-Plex-Sans"; 
+  src: url('fonts/IBM-Plex-Sans/IBMPlexSans-Italic.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: "IBM-Plex-Sans"; 
+  src: url('fonts/IBM-Plex-Sans/IBMPlexSans-Bold.ttf') format('truetype'); 
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "IBM-Plex-Sans"; 
+  src: url('fonts/IBM-Plex-Sans/IBMPlexSans-SemiBold.ttf') format('truetype'); 
+  font-weight: semibold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBM-Plex-Sans"; 
+  src: url('fonts/IBM-Plex-Sans/IBMPlexSans-BoldItalic.ttf') format('truetype'); 
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: "IBM-Plex-Sans"; 
+  src: url('fonts/IBM-Plex-Sans/IBMPlexSans-Thin.ttf') format('truetype'); 
+  font-weight: thin;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: "IBM-Plex-Serif"; 
+  src: url('fonts/IBM-Plex-Serif/IBMPlexSerif-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "IBM-Plex-Serif"; 
+  src: url('fonts/IBM-Plex-Serif/IBMPlexSerif-Italic.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: "IBM-Plex-Serif"; 
+  src: url('fonts/IBM-Plex-Serif/IBMPlexSerif-Bold.ttf') format('truetype'); 
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "IBM-Plex-Serif"; 
+  src: url('fonts/IBM-Plex-Serif/IBMPlexSerif-BoldItalic.ttf') format('truetype'); 
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "IBM-Plex-Serif"; 
+  src: url('fonts/IBM-Plex-Serif/IBMPlexSerif-SemiBold.ttf') format('truetype'); 
+  font-weight: semibold;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "IBM-Plex-Serif"; 
+  src: url('fonts/IBM-Plex-Serif/IBMPlexSerif-Thin.ttf') format('truetype'); 
+  font-weight: thin;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "IBM-Plex-Serif"; 
+  src: url('fonts/IBM-Plex-Serif/IBMPlexSerif-Regular.ttf') format('truetype'); 
+  font-weight: thin;
+  font-style: normal;
+}
+
+
+
+
